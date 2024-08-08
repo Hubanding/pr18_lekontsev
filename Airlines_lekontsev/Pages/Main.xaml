@@ -1,0 +1,21 @@
+﻿<Page x:Class="Airlines_lekontsev.Pages.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Airlines_lekontsev.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="347.325" d:DesignWidth="569"
+      Title="Main">
+
+    <Grid Background="#FF0C73FE">
+        <Label Content="Поиск дешёвых авиабилетов" HorizontalAlignment="Center" FontSize="16" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="165,68,156.8,246.2" RenderTransformOrigin="0.54,-0.498" Height="33" Width="247"/>
+        <Label Content="Лучший способ купить авиабилеты дёшево" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="196,106,199.8,212.2" RenderTransformOrigin="0.54,-0.498" FontSize="8" Height="29" Width="173"/>
+        <Label Content="Откуда:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="165,140,163.8,183.2" RenderTransformOrigin="0.54,-0.498" FontSize="8" Width="240" Height="24"/>
+        <TextBox x:Name="from" Width="240" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="165,164,163.8,158.2"/>
+        <Label Content="Куда:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="165,201,163.8,121.2" RenderTransformOrigin="0.54,-0.498" FontSize="8" Width="240" Height="25"/>
+        <TextBox x:Name="to" Width="240" Height="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="165,226,163.8,97.2"/>
+        <Button Content="Найти" Margin="315,255,163.8,70.2" Background="#FFFF4000" Foreground="White" Click="Search"  Width="90" Height="22" HorizontalAlignment="Center" />
+    </Grid>
+</Page>
+
