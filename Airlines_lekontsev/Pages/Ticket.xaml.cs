@@ -20,9 +20,20 @@ namespace Airlines_lekontsev.Pages
     /// </summary>
     public partial class Ticket : Page
     {
-        public Ticket()
+        public List<TicketContext> AllTickets;
+        public Ticket(string from, string to)
         {
             InitializeComponent();
+            AllTickets = TicketContext.AllTicket().FindAll(x =>
+                 (x.From == from && to == "") || (from == "" && x.To == to) || (x.From == from && x.To == to));
+            CreateUI();
+        }
+        public void CreateUI()
+        {
+            foreach (TicketContext ticket in AllTickets)
+            {
+                parent.Children.Add(new Elements.Item(ticket));
+            }
         }
     }
 }

@@ -24,5 +24,11 @@ namespace Airlines_lekontsev.Pages
         {
             InitializeComponent();
         }
+
+        private void Search(object sender, RoutedEventArgs e)
+        {
+            MainWindow.init.OpenPage(new Pages.Ticket(from.Text, to.Text));
+        }
     }
 }
+
